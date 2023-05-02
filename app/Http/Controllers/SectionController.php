@@ -87,7 +87,7 @@ class SectionController extends Controller
         
     }
 
-    public function creerSection(Request $request){
+    public function creerDocumentDansSection(Request $request){
         $user = Auth::user();
         $entreprises = Entreprise::all();
         $entreprise = $entreprises->find($user->entreprise_id);
